@@ -6,6 +6,8 @@ Escape from the Maze is a terminal-based, turn-based maze simulation game develo
 
 This project was developed to apply and demonstrate classical data structures such as Stacks, Queues, and Circular Linked Lists within a real-time, interactive scenario.
 
+
+
 🕹️ Gameplay
 
 Two agents (Agent 1 & Agent 2) navigate a 10x10 maze.
@@ -23,22 +25,38 @@ One random maze column rotates at certain turns using a CircularLinkedList, impa
 
 Ensure you have Java 8+ installed.
 Compile the code:
-<pre> <code>```bash javac Main.java ```</code> </pre>
+```bash
+javac Main.java
+```
 
 Run the game:
-<pre> <code>```bash java Main ```</code> </pre>
+```bash
+java Main
+```
+
+
 
 🧱 Project Structure
 
 🟥Agent:	Represents the agent with position, score, history (Stack), and power-ups.
+
 🟧MazeManager:	Manages maze generation, validation, and updates.
+
 🟨MazeTile:	Represents a single maze cell (wall, trap, power-up, etc.).
+
 🟩GameController:	Handles game flow, agent turns, and input processing.
+
 🟦CircularLinkedList:	Used to rotate maze columns dynamically.
+
 🟪MyStack:	Custom stack for agent movement history (backtracking).
+
 ⬛️MyQueue:	Custom queue for future enhancements (e.g., BFS).
+
 ⬜️TurnManager:	Manages agent turns using a circular structure.
+
 🟫Main:	Entry point of the application.
+
+
 
 🧠 Educational Value
 
