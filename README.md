@@ -11,13 +11,21 @@ This project was developed to apply and demonstrate classical data structures su
 🕹️ Gameplay
 
 Two agents (Agent 1 & Agent 2) navigate a 10x10 maze.
+
 User inputs move the agents turn-by-turn (U, D, L, R).
+
 Maze elements:
+
 W: Wall (impassable)
+
 E: Empty space
+
 T: Trap (forces agent back 2 steps)
+
 P: Power-up (allows passing through walls for 3 moves)
+
 G: Goal
+
 One random maze column rotates at certain turns using a CircularLinkedList, impacting gameplay dynamically.
 
 
@@ -61,6 +69,9 @@ java Main
 🧠 Educational Value
 
 This project demonstrates:
+
 ➡️Use of fundamental data structures in a practical scenario.
+
 ➡️Turn-based logic and agent simulation.
+
 ➡️Modularity and object-oriented design.
