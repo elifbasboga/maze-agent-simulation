@@ -1,77 +1,73 @@
-🧩 Escape from the Maze
 
-🎯 Project Overview
+# 🧩 Escape from the Maze
 
-Escape from the Maze is a terminal-based, turn-based maze simulation game developed in Java. The goal is to guide agents through a randomly generated maze filled with traps, power-ups, walls, and rotating columns. The first agent to reach the goal wins.
+## 🎯 Project Overview
 
-This project was developed to apply and demonstrate classical data structures such as Stacks, Queues, and Circular Linked Lists within a real-time, interactive scenario.
+**Escape from the Maze** is a terminal-based, turn-based maze simulation game developed in Java.  
+The goal is to guide agents through a randomly generated maze filled with traps, power-ups, walls, and rotating columns.  
+The first agent to reach the goal wins.
 
+This project demonstrates classical data structures such as **Stacks**, **Queues**, and **Circular Linked Lists** within a real-time, interactive scenario.
 
+---
 
-🕹️ Gameplay
+## 🕹️ Gameplay
 
-Two agents (Agent 1 & Agent 2) navigate a 10x10 maze.
+- Two agents (**Agent 1** & **Agent 2**) navigate a **10x10 maze**.
+- Users control agents turn-by-turn using:
+  - `U`: Up  
+  - `D`: Down  
+  - `L`: Left  
+  - `R`: Right
 
-User inputs move the agents turn-by-turn (U, D, L, R).
+### Maze Elements:
+- `W`: Wall (impassable)  
+- `E`: Empty space  
+- `T`: Trap (pushes agent back 2 steps)  
+- `P`: Power-up (allows passing through walls for 3 moves)  
+- `G`: Goal
 
-Maze elements:
+✨ At certain turns, **one random column rotates** using a `CircularLinkedList`, adding dynamic challenges.
 
-W: Wall (impassable)
+---
 
-E: Empty space
+## ⚙️ How to Run
 
-T: Trap (forces agent back 2 steps)
+Make sure you have **Java 8+** installed.
 
-P: Power-up (allows passing through walls for 3 moves)
-
-G: Goal
-
-One random maze column rotates at certain turns using a CircularLinkedList, impacting gameplay dynamically.
-
-
-⚙️ How to Run
-
-Ensure you have Java 8+ installed.
-Compile the code:
+**Compile the code:**
 ```bash
 javac Main.java
-```
+````
 
-Run the game:
+**Run the game:**
+
 ```bash
 java Main
 ```
 
+---
 
+## 🧱 Project Structure
 
-🧱 Project Structure
+| Component               | Description                                                        |
+| ----------------------- | ------------------------------------------------------------------ |
+| 🟥 `Agent`              | Represents the agent (position, score, movement stack, power-ups). |
+| 🟧 `MazeManager`        | Handles maze generation, validation, and updates.                  |
+| 🟨 `MazeTile`           | Represents a maze cell (wall, trap, goal, etc.).                   |
+| 🟩 `GameController`     | Controls game loop, turns, and user inputs.                        |
+| 🟦 `CircularLinkedList` | Rotates maze columns dynamically.                                  |
+| 🟪 `MyStack`            | Custom stack used for agent movement history.                      |
+| ⬛ `MyQueue`             | Custom queue (reserved for future enhancements).                   |
+| ⬜ `TurnManager`         | Manages agent turns (circular fashion).                            |
+| 🟫 `Main`               | Entry point of the program.                                        |
 
-🟥Agent:	Represents the agent with position, score, history (Stack), and power-ups.
+---
 
-🟧MazeManager:	Manages maze generation, validation, and updates.
+## 🧠 Educational Value
 
-🟨MazeTile:	Represents a single maze cell (wall, trap, power-up, etc.).
+This project showcases:
 
-🟩GameController:	Handles game flow, agent turns, and input processing.
-
-🟦CircularLinkedList:	Used to rotate maze columns dynamically.
-
-🟪MyStack:	Custom stack for agent movement history (backtracking).
-
-⬛️MyQueue:	Custom queue for future enhancements (e.g., BFS).
-
-⬜️TurnManager:	Manages agent turns using a circular structure.
-
-🟫Main:	Entry point of the application.
-
-
-
-🧠 Educational Value
-
-This project demonstrates:
-
-➡️Use of fundamental data structures in a practical scenario.
-
-➡️Turn-based logic and agent simulation.
-
-➡️Modularity and object-oriented design.
+➡️ Practical use of **fundamental data structures**
+➡️ Turn-based **agent logic and simulation**
+➡️ Emphasis on **modular, object-oriented design**
