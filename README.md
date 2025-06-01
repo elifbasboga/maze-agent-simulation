@@ -69,5 +69,7 @@ java Main
 This project showcases:
 
 ➡️ Practical use of **fundamental data structures**
+
 ➡️ Turn-based **agent logic and simulation**
+
 ➡️ Emphasis on **modular, object-oriented design**
